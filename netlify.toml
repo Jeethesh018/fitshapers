@@ -1,4 +1,20 @@
+# netlify.toml
+[build]
+  # The command to build your site. For Vite, it is 'vite build'
+  command = "npm run build"
+
+  # Directory that contains the final build output. By default, Vite outputs to 'dist/'
+  publish = "dist"
+
+  # Optionally, you can specify a base directory if your app is in a subdirectory of your repo
+  # base = "subdirectory"
+
+[build.environment]
+  # Set environment variables if needed, for example:
+  # VITE_API_URL = "https://your-api-url.com"
+
 [[redirects]]
-from = "/*"
-to "/index.html"
-status = 200
+  # If you need to handle 404 pages or rewrites, you can use redirects
+  from = "/404.html"
+  to = "/index.html"
+  status = 200
