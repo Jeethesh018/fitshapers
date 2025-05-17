@@ -1,0 +1,15 @@
+@keyframes float {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Start slightly below */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End in the original position */
+    }
+  }
+  
+  .animate-float {
+    animation: float 3s ease-out forwards;
+  }
+  

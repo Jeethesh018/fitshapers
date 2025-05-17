@@ -3,11 +3,11 @@ import toast from 'react-hot-toast';
 import useAddTrainer from '../API/trainerApi/useAddTrainer';
 import useEditTrainer from '../API/trainerApi/useEditTrainer';
 import useDeleteTrainer from '../API/trainerApi/useDeleteTrainer';
-import useTrainerlist from '../API/trainerApi/useTrainerlist';
 import { appContext } from '../Context/AppContex';
 import AddDetails from './AddDetails';
 import useUserlist from '../API/UserAPI/useUserlist';
 import useDeleteUser from '../API/UserAPI/useDeleteUser';
+import useTrainerlist from '../API/TrainerAPI/useTrainerlist';
 
 const Admin = () => {
 

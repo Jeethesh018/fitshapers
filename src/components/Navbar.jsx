@@ -13,16 +13,12 @@ const Navbar = () =>{
     const navigate = useNavigate();
     const name = useSelector(store =>store?.login?.username)
     const userDetails = useSelector(store=>store?.login?.userDetails)
-    console.log(userDetails)
-   
-
-
+    console.log(userDetails);
 
     const handleLogout = async () =>{
         try{
              await signOut(auth)
              toast.success("logged out")
-           
         }
         catch(e){
 
@@ -52,10 +48,10 @@ const Navbar = () =>{
                 <li className="py-1">CONTACT</li>
                <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden"/>
             </NavLink>
-            <NavLink to="/admin">
+            {/* <NavLink to="/admin">
                 <li className="py-1">ADMIN</li>
                <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden"/>
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/reviews">
                 <li className="py-1">FEEDBACK   </li>
                <hr className="border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden"/>
@@ -81,6 +77,7 @@ const Navbar = () =>{
                 <button  className="bg-red-600 text-white px-8 py-3 rounded-full font-light hidden md:block"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfnoHXFALJrMcOFdPaqKwJfTYzUzluHWj3n6DLISrn0Ge5b-g/viewform?usp=sf_link"  target="_blank"
     rel="noopener noreferrer">Enroll Now</a></button>
                 <button onClick={()=>navigate("/login")} className="bg-primary text-white px-8 py-3 rounded-full font-light hidden md:block">Create Account</button>
+                <button onClick={()=>navigate("/adminLogin")} className="bg-green-900 text-white px-8 py-3 rounded-full font-light hidden md:block">Admin</button>
                 </>
                 
             }

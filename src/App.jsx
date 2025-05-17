@@ -11,7 +11,9 @@ import Appointment from "./pages/Appointment"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import Admin from "./pages/Admin"
-import Reviews from "./pages/reviews"
+import Reviews from "./pages/Reviews"
+import AdminLogin from "./pages/AdminLogin"
+
 function App() {
 
   return (
@@ -31,6 +33,7 @@ function App() {
       <Route path="/newAppointment/:trainerId " element={<Appointment/>} />
       <Route path="/admin" element={<Admin/>}/>
       <Route path="/reviews" element={<Reviews/>}/>
+      <Route path="/adminLogin" element={<AdminLogin/>}/>
     </Routes>
     <Footer/>
     </div>
