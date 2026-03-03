@@ -1,9 +1,9 @@
 import React, { useContext, useState } from 'react';
 import toast from 'react-hot-toast';
-import useAddTrainer from '../API/trainerApi/useAddTrainer';
-import useEditTrainer from '../API/trainerApi/useEditTrainer';
-import useDeleteTrainer from '../API/trainerApi/useDeleteTrainer';
-import useTrainerlist from '../API/trainerApi/useTrainerlist';
+import useAddTrainer from '../API/TrainerAPI/useAddTrainer';
+import useEditTrainer from '../API/TrainerAPI/useEditTrainer';
+import useDeleteTrainer from '../API/TrainerAPI/useDeleteTrainer';
+import useTrainerlist from '../API/TrainerAPI/useTrainerlist';
 import { appContext } from '../Context/AppContex';
 import AddDetails from './AddDetails';
 import useUserlist from '../API/UserAPI/useUserlist';

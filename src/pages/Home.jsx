@@ -1,5 +1,4 @@
 import Banner from "../components/Banner";
-import Footer from "../components/Footer";
 import Header from "../components/Header";
 import SpecailityMenu from "../components/SpecailityMenu";
 import TopTrainer from "../components/TopTrainers";
@@ -9,7 +8,7 @@ const Home = () =>{
         <div>
        <Header/>
        <SpecailityMenu/>
-       {/* <TopTrainer/> */}
+       <TopTrainer/>
        <Banner/>
        
         </div>

@@ -14,7 +14,7 @@ import { useDispatch } from "react-redux";
 import { saveUser } from "../Store/loginSlice";
 import { db } from "../Auth/auth";
 import { collection } from "firebase/firestore";
-import useAddUser from "../API/UserAPI/useAdduser";
+import useAddUser from "../API/UserAPI/useAddUser";
 
 const Login = () => {
   const [state, setState] = useState("Login"); 

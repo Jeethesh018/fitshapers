@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { appContext } from "../Context/AppContex";
-import useDeleteTrainer from '../API/trainerApi/useDeleteTrainer';
-import useTrainerlist from '../API/trainerApi/useTrainerlist';
+import useDeleteTrainer from '../API/TrainerAPI/useDeleteTrainer';
+import useTrainerlist from '../API/TrainerAPI/useTrainerlist';
 
 const AddDetails = ({submit,handleCheckboxChange,handleEdit,handleFileChange,Header,Header2}) =>{
 
