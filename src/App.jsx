@@ -11,7 +11,7 @@ import Appointment from "./pages/Appointment"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import Admin from "./pages/Admin"
-import Reviews from "./pages/reviews"
+import Reviews from "./pages/Reviews"
 function App() {
 
   return (
@@ -28,7 +28,7 @@ function App() {
       <Route path="/contact" element={<Contact/>} />
       <Route path="/profile" element={<MyProfile/>} />
       <Route path="/appointments" element={<MyAppointment/>} />
-      <Route path="/newAppointment/:trainerId " element={<Appointment/>} />
+      <Route path="/newAppointment/:trainerId" element={<Appointment/>} />
       <Route path="/admin" element={<Admin/>}/>
       <Route path="/reviews" element={<Reviews/>}/>
     </Routes>
